@@ -58,6 +58,9 @@ class Song
     new_song
   end
   
+  def self.create_from_filename(mp3format)
+    @@all << self.new_from_filename(mp3format)
+  end
   
 
 end
