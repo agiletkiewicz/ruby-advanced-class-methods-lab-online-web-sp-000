@@ -40,7 +40,7 @@ class Song
     else 
       song = self.new 
      @@all << song
-     song.name = song_name 
+     song.name = name 
      song
     end
   end
