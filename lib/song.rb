@@ -48,5 +48,14 @@ class Song
     sorted
   end
   
+  def self.new_from_filename(mp3format)
+    array = mp3format.split(/[-.]/)
+    artist = array[0]
+    song = array[1] 
+    new = self.find_or_create_by_name(song)
+    new.artist_name = artist 
+  end
+  
+  
 
 end
