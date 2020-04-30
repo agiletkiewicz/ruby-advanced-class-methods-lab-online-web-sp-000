@@ -52,7 +52,8 @@ class Song
     array = mp3format.split(/[-.]/)
     artist = array[0].strip
     song = array[1].strip
-    new = self.create_by_name(song)
+    new_song = self.find_or_create_by_name
+    new_song.song = 
     new.artist_name = artist 
   end
   
