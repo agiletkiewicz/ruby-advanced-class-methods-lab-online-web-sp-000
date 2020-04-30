@@ -53,8 +53,8 @@ class Song
     artist = array[0].strip
     song = array[1].strip
     new_song = self.find_or_create_by_name
-    new_song.song = 
-    new.artist_name = artist 
+    new_song.name = song
+    new_song.artist_name = artist 
   end
   
   
